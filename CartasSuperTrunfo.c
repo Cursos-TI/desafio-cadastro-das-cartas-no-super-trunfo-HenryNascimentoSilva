@@ -6,6 +6,16 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+float calcularDensidade(int populacao, float area) {
+    float densidade = populacao / area;
+    return densidade;
+}
+
+float calcularPibPerCapta(float pib, int populacao) {
+    float pibPerCapta = pib / populacao;
+    return pibPerCapta;
+}
+
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -76,6 +86,8 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f \n", calcularDensidade(populacao1, area1));
+    printf("PIB per Capita:: %.2f \n", calcularPibPerCapta(pib1, populacao1));
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
@@ -85,6 +97,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f \n", calcularDensidade(populacao2, area2));
+    printf("PIB per Capita:: %.2f \n", calcularPibPerCapta(pib2, populacao2));
 
     
     // Cadastro das Cartas:
